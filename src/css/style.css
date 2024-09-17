@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    min-width: 320px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: #8B5A58; */
+    padding: 10px;
+}
+
+.logo {
+    font-size: 50px;
+    color: brown;
+    margin-right: 30px;
+}
+
+.nav {
+    background-color: brown;
+    padding-top: 50px;
+    padding-left: 845px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.menu {
+    display: none;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1199px) {
+    .nav {
+        padding-left: 500px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav {
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
+.blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.main__block {
+    background-color: brown;
+    height: 200px;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.aside__block {
+    background-color: brown;
+    height: 200px;
+    width: 30%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .blocks {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main__block {
+        width: 100%;
+    }
+    .aside__block {
+        width: 100%;
+    }
+}
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.column {
+    background-color: brown;
+    width: 30%;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .columns {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .column {
+        width: 40%;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .columns {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .column {
+        width: 100%;
+    }
+}
